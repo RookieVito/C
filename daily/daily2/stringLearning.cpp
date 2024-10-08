@@ -138,12 +138,20 @@ void regexLearning(){
         std::cout <<(*it).str() << std::endl;
         ++it;
     }
-
+}
+void char_v_to_string(){
     // convert C string to C++ string 
     // only using CString init the C++ string for conversion
     const char* cstr = "Hello, C-strings!";
     std::string str(cstr);
     std::cout << str << std::endl;
+}
+
+//using str.c_str() to convert C++ string to C string 
+void string_to_char_v(){
+    std::string str = "Hello, std::strings!";
+    const char* cstr = str.c_str();
+    std::cout << cstr << std::endl;
 }
 int main(int argc, char *argv[]) {
     // IPO_string();
